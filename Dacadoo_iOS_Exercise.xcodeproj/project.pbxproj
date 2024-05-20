@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D604DD5E2BF88963001FCC24 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604DD5D2BF88963001FCC24 /* APIManager.swift */; };
+		D61083A52BFA4BD600EEE539 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61083A42BFA4BD600EEE539 /* ImageDownloader.swift */; };
+		D61083A92BFA511E00EEE539 /* CellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61083A62BFA511E00EEE539 /* CellImage.swift */; };
+		D61083AB2BFA68A700EEE539 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61083AA2BFA68A700EEE539 /* ShowImageViewController.swift */; };
+		D65042F42BF7F5E400856547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65042F32BF7F5E400856547 /* AppDelegate.swift */; };
+		D65042F62BF7F5E400856547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65042F52BF7F5E400856547 /* SceneDelegate.swift */; };
+		D65042F82BF7F5E400856547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65042F72BF7F5E400856547 /* ViewController.swift */; };
+		D65042FB2BF7F5E400856547 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D65042FA2BF7F5E400856547 /* Base */; };
+		D65042FD2BF7F5E600856547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65042FC2BF7F5E600856547 /* Assets.xcassets */; };
+		D65043002BF7F5E600856547 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D65042FF2BF7F5E600856547 /* Base */; };
+		D650430B2BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D650430A2BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.swift */; };
+		D65043152BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65043142BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.swift */; };
+		D65043172BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65043162BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITestsLaunchTests.swift */; };
+		D697C7612BF8BF4C00D1D503 /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D697C7602BF8BF4C00D1D503 /* ImageInfo.swift */; };
+		D697C76C2BF8C62E00D1D503 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D697C76B2BF8C62E00D1D503 /* PhotoViewModel.swift */; };
+		D69D9AD32BF93C0900E49973 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69D9AD22BF93C0900E49973 /* UIImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D65043072BF7F5E600856547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65042E82BF7F5E300856547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65042EF2BF7F5E300856547;
+			remoteInfo = Dacadoo_iOS_Exercise;
+		};
+		D65043112BF7F5E600856547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65042E82BF7F5E300856547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65042EF2BF7F5E300856547;
+			remoteInfo = Dacadoo_iOS_Exercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D604DD5D2BF88963001FCC24 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D61083A42BFA4BD600EEE539 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		D61083A62BFA511E00EEE539 /* CellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImage.swift; sourceTree = "<group>"; };
+		D61083AA2BFA68A700EEE539 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		D65042F02BF7F5E400856547 /* Dacadoo_iOS_Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dacadoo_iOS_Exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65042F32BF7F5E400856547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D65042F52BF7F5E400856547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D65042F72BF7F5E400856547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D65042FA2BF7F5E400856547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D65042FC2BF7F5E600856547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65042FF2BF7F5E600856547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D65043012BF7F5E600856547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65043062BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dacadoo_iOS_ExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D650430A2BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dacadoo_iOS_ExerciseTests.swift; sourceTree = "<group>"; };
+		D65043102BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dacadoo_iOS_ExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65043142BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dacadoo_iOS_ExerciseUITests.swift; sourceTree = "<group>"; };
+		D65043162BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dacadoo_iOS_ExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D697C7602BF8BF4C00D1D503 /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		D697C76B2BF8C62E00D1D503 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		D69D9AD22BF93C0900E49973 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65042ED2BF7F5E300856547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65043032BF7F5E600856547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D650430D2BF7F5E600856547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D604DD5C2BF88947001FCC24 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D604DD5D2BF88963001FCC24 /* APIManager.swift */,
+				D61083A42BFA4BD600EEE539 /* ImageDownloader.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D604DD5F2BF88B24001FCC24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D697C7602BF8BF4C00D1D503 /* ImageInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D65042E72BF7F5E300856547 = {
+			isa = PBXGroup;
+			children = (
+				D65042F22BF7F5E400856547 /* Dacadoo_iOS_Exercise */,
+				D65043092BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests */,
+				D65043132BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests */,
+				D65042F12BF7F5E400856547 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65042F12BF7F5E400856547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65042F02BF7F5E400856547 /* Dacadoo_iOS_Exercise.app */,
+				D65043062BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.xctest */,
+				D65043102BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65042F22BF7F5E400856547 /* Dacadoo_iOS_Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				D69D9AD42BF93F9000E49973 /* Controller */,
+				D697C76A2BF8C30500D1D503 /* ViewModel */,
+				D697C7622BF8C03700D1D503 /* View */,
+				D604DD5F2BF88B24001FCC24 /* Model */,
+				D604DD5C2BF88947001FCC24 /* APIManager */,
+				D65042F32BF7F5E400856547 /* AppDelegate.swift */,
+				D65042F52BF7F5E400856547 /* SceneDelegate.swift */,
+				D65042F92BF7F5E400856547 /* Main.storyboard */,
+				D65042FC2BF7F5E600856547 /* Assets.xcassets */,
+				D65042FE2BF7F5E600856547 /* LaunchScreen.storyboard */,
+				D65043012BF7F5E600856547 /* Info.plist */,
+			);
+			path = Dacadoo_iOS_Exercise;
+			sourceTree = "<group>";
+		};
+		D65043092BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D650430A2BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.swift */,
+			);
+			path = Dacadoo_iOS_ExerciseTests;
+			sourceTree = "<group>";
+		};
+		D65043132BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D65043142BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.swift */,
+				D65043162BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITestsLaunchTests.swift */,
+			);
+			path = Dacadoo_iOS_ExerciseUITests;
+			sourceTree = "<group>";
+		};
+		D697C7622BF8C03700D1D503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D69D9AD22BF93C0900E49973 /* UIImage.swift */,
+				D61083A62BFA511E00EEE539 /* CellImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D697C76A2BF8C30500D1D503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D697C76B2BF8C62E00D1D503 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D69D9AD42BF93F9000E49973 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D65042F72BF7F5E400856547 /* ViewController.swift */,
+				D61083AA2BFA68A700EEE539 /* ShowImageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65042EF2BF7F5E300856547 /* Dacadoo_iOS_Exercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D650431A2BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_Exercise" */;
+			buildPhases = (
+				D65042EC2BF7F5E300856547 /* Sources */,
+				D65042ED2BF7F5E300856547 /* Frameworks */,
+				D65042EE2BF7F5E300856547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dacadoo_iOS_Exercise;
+			packageProductDependencies = (
+			);
+			productName = Dacadoo_iOS_Exercise;
+			productReference = D65042F02BF7F5E400856547 /* Dacadoo_iOS_Exercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D65043052BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D650431D2BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_ExerciseTests" */;
+			buildPhases = (
+				D65043022BF7F5E600856547 /* Sources */,
+				D65043032BF7F5E600856547 /* Frameworks */,
+				D65043042BF7F5E600856547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65043082BF7F5E600856547 /* PBXTargetDependency */,
+			);
+			name = Dacadoo_iOS_ExerciseTests;
+			productName = Dacadoo_iOS_ExerciseTests;
+			productReference = D65043062BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D650430F2BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65043202BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_ExerciseUITests" */;
+			buildPhases = (
+				D650430C2BF7F5E600856547 /* Sources */,
+				D650430D2BF7F5E600856547 /* Frameworks */,
+				D650430E2BF7F5E600856547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65043122BF7F5E600856547 /* PBXTargetDependency */,
+			);
+			name = Dacadoo_iOS_ExerciseUITests;
+			productName = Dacadoo_iOS_ExerciseUITests;
+			productReference = D65043102BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65042E82BF7F5E300856547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D65042EF2BF7F5E300856547 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D65043052BF7F5E600856547 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D65042EF2BF7F5E300856547;
+					};
+					D650430F2BF7F5E600856547 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D65042EF2BF7F5E300856547;
+					};
+				};
+			};
+			buildConfigurationList = D65042EB2BF7F5E300856547 /* Build configuration list for PBXProject "Dacadoo_iOS_Exercise" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65042E72BF7F5E300856547;
+			packageReferences = (
+			);
+			productRefGroup = D65042F12BF7F5E400856547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65042EF2BF7F5E300856547 /* Dacadoo_iOS_Exercise */,
+				D65043052BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests */,
+				D650430F2BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65042EE2BF7F5E300856547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65042FD2BF7F5E600856547 /* Assets.xcassets in Resources */,
+				D65043002BF7F5E600856547 /* Base in Resources */,
+				D65042FB2BF7F5E400856547 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65043042BF7F5E600856547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D650430E2BF7F5E600856547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65042EC2BF7F5E300856547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61083A92BFA511E00EEE539 /* CellImage.swift in Sources */,
+				D604DD5E2BF88963001FCC24 /* APIManager.swift in Sources */,
+				D65042F82BF7F5E400856547 /* ViewController.swift in Sources */,
+				D65042F42BF7F5E400856547 /* AppDelegate.swift in Sources */,
+				D697C7612BF8BF4C00D1D503 /* ImageInfo.swift in Sources */,
+				D697C76C2BF8C62E00D1D503 /* PhotoViewModel.swift in Sources */,
+				D61083A52BFA4BD600EEE539 /* ImageDownloader.swift in Sources */,
+				D69D9AD32BF93C0900E49973 /* UIImage.swift in Sources */,
+				D65042F62BF7F5E400856547 /* SceneDelegate.swift in Sources */,
+				D61083AB2BFA68A700EEE539 /* ShowImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65043022BF7F5E600856547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D650430B2BF7F5E600856547 /* Dacadoo_iOS_ExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D650430C2BF7F5E600856547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65043172BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITestsLaunchTests.swift in Sources */,
+				D65043152BF7F5E600856547 /* Dacadoo_iOS_ExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D65043082BF7F5E600856547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65042EF2BF7F5E300856547 /* Dacadoo_iOS_Exercise */;
+			targetProxy = D65043072BF7F5E600856547 /* PBXContainerItemProxy */;
+		};
+		D65043122BF7F5E600856547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65042EF2BF7F5E300856547 /* Dacadoo_iOS_Exercise */;
+			targetProxy = D65043112BF7F5E600856547 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D65042F92BF7F5E400856547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65042FA2BF7F5E400856547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D65042FE2BF7F5E600856547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65042FF2BF7F5E600856547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D65043182BF7F5E600856547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D65043192BF7F5E600856547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D650431B2BF7F5E600856547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dacadoo_iOS_Exercise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-Exercise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D650431C2BF7F5E600856547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dacadoo_iOS_Exercise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-Exercise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D650431E2BF7F5E600856547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-ExerciseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dacadoo_iOS_Exercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dacadoo_iOS_Exercise";
+			};
+			name = Debug;
+		};
+		D650431F2BF7F5E600856547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-ExerciseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dacadoo_iOS_Exercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dacadoo_iOS_Exercise";
+			};
+			name = Release;
+		};
+		D65043212BF7F5E600856547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-ExerciseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dacadoo_iOS_Exercise;
+			};
+			name = Debug;
+		};
+		D65043222BF7F5E600856547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.template.Dacadoo-iOS-ExerciseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dacadoo_iOS_Exercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65042EB2BF7F5E300856547 /* Build configuration list for PBXProject "Dacadoo_iOS_Exercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65043182BF7F5E600856547 /* Debug */,
+				D65043192BF7F5E600856547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D650431A2BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_Exercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D650431B2BF7F5E600856547 /* Debug */,
+				D650431C2BF7F5E600856547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D650431D2BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_ExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D650431E2BF7F5E600856547 /* Debug */,
+				D650431F2BF7F5E600856547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65043202BF7F5E600856547 /* Build configuration list for PBXNativeTarget "Dacadoo_iOS_ExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65043212BF7F5E600856547 /* Debug */,
+				D65043222BF7F5E600856547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D65042E82BF7F5E300856547 /* Project object */;
+}
