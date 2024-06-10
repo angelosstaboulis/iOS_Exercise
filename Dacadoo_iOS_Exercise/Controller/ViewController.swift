@@ -9,27 +9,27 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var pictureInfo=[Urls](){
-            didSet{
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+        didSet{
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
+        }
     }
     var viewModel = PhotoViewModel()
-  
+    
     @IBOutlet weak var txtWidth: NSLayoutConstraint!
     @IBOutlet weak var btnSearch: UIButton!
     @IBOutlet weak var tableView: UITableView!
-   
+    
     @IBOutlet weak var txtPhrase: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         initialView()
         setupTableView()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func btnSearch(_ sender: Any) {
         guard let phrase = txtPhrase.text else{
             return
@@ -68,13 +68,9 @@ extension ViewController{
         fetchData(query: "all")
     }
     func getURL(apiURL:String)  {
-        Task{
-            do{
-                pictureInfo.append(contentsOf: try await viewModel.getAllPhotos(urlString: apiURL))
-            }catch{
-                debugPrint("something went wrong!!!"+error.localizedDescription)
+            viewModel.getAllPhotos(urlString: apiURL) { imageinfo in
+                self.pictureInfo.append(contentsOf: imageinfo)
             }
-        }
     }
     func fetchData(query:String){
         getURL(apiURL:"https://api.unsplash.com/search/photos?query=\(query)&client_id=NHr5nmnvy4fJA0AtfpReQm_EI2SBnnvPajDObRtmYbY")
@@ -101,12 +97,12 @@ extension ViewController{
         return  450
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         showImage(indexPath: indexPath)
+        showImage(indexPath: indexPath)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return createCell(tableView: tableView, indexPath: indexPath)
     }
-   
+    
     
     
 }

@@ -8,11 +8,22 @@
 import Foundation
 
 class APIManager{
-    func fetcPhotos(urlString:String) async throws -> ImageInfo {
-            guard let url = URL(string:urlString) else{
-                return ImageInfo(total: 0, totalPages: 0, results: [])
+    func fetcPhotos(urlString:String,completion:@escaping ((ImageInfo)->())){
+        DispatchQueue.main.async{
+            guard let urlMain = URL(string:urlString) else {
+                return
             }
-            let (data, _) = try await URLSession.shared.data(from: url)
-            return try JSONDecoder().decode(ImageInfo.self, from: data)
+            let request = URLRequest(url:urlMain)
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let getData = data else {
+                    return
+                }
+                do{
+                    completion(try JSONDecoder().decode(ImageInfo.self, from: getData))
+                }catch{
+                    debugPrint("something went wrong!!!"+error.localizedDescription)
+                }
+            }.resume()
+        }
     }
 }

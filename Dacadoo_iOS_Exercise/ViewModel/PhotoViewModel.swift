@@ -8,7 +8,13 @@
 import Foundation
 class PhotoViewModel{
     let photoServices = APIManager()
-    func getAllPhotos(urlString:String) async throws -> [Urls] {
-        return try await photoServices.fetcPhotos(urlString: urlString).results.map{$0.urls}
+    func getAllPhotos(urlString:String,completion:@escaping ([Urls])->()){
+        photoServices.fetcPhotos(urlString: urlString) { info in
+            var urls:[Urls] = []
+            for (index,value) in info.results.enumerated(){
+                urls.append(value.urls)
+            }
+            completion(urls)
+        }
     }
 }
