@@ -7,7 +7,7 @@
 
 import Foundation
 
-class APIManager{
+actor APIManager{
     func fetcPhotos(urlString:String,completion:@escaping ((ImageInfo)->())){
         DispatchQueue.main.async{
             guard let urlMain = URL(string:urlString) else {
